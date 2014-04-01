@@ -1,3 +1,4 @@
 language: objective-c
 xcode_workspace: Example/IGTidy.xcworkspace
 xcode_scheme: IGTidy
+install: pod install
