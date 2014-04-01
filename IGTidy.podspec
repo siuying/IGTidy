@@ -1,25 +1,18 @@
-#
-# Be sure to run `pod lib lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 Pod::Spec.new do |s|
   s.name             = "IGTidy"
   s.version          = "0.1.0"
-  s.summary          = "A short description of IGTidy."
+  s.summary          = "Objective-C wrapper for HTML Tidy for HTML5 (tidy-html5)."
   s.description      = <<-DESC
-                       An optional longer description of IGTidy
+                       Objective-C wrapper for HTML Tidy for HTML5 (tidy-html5).
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Tidy corrects and cleans up HTML content by fixing markup errors.
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/siuying/IGTidy"
+
   s.license          = 'MIT'
   s.author           = { "Francis Chong" => "francis@ignition.hk" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.source           = { :git => "https://github.com/siuying/IGTidy.git", :tag => s.version.to_s, :submodules => true }
+  s.social_media_url = 'https://twitter.com/siuying'
 
   s.requires_arc = true
 
