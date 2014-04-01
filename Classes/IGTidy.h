@@ -19,9 +19,13 @@ typedef enum {
 @interface IGTidy : NSObject
 
 -(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
+                       outputFormat:(IGTidyFormat)outputFormat;
+
+-(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
                        outputFormat:(IGTidyFormat)outputFormat
-                           encoding:(NSString*)encoding
-                        tidyOptions:(NSDictionary*)tidyOptions;
+                            options:(NSDictionary*)options;
+
+-(void) setOptions:(NSDictionary*)options;
 
 -(NSString*) cleanString:(NSString*)string error:(NSError**)outError;
 

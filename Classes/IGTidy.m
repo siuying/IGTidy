@@ -27,8 +27,13 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
 
 -(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
                        outputFormat:(IGTidyFormat)outputFormat
-                           encoding:(NSString*)encoding
-                        tidyOptions:(NSDictionary*)tidyOptions
+{
+    return [self initWithInputFormat:inputFormat outputFormat:outputFormat options:nil];
+}
+
+-(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
+                       outputFormat:(IGTidyFormat)outputFormat
+                            options:(NSDictionary*)options
 {
     self = [super init];
 
@@ -68,16 +73,21 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
     }
     
     // Set encoding - same for input and output
-    tidySetInCharEncoding(_tidyDocument, encoding.UTF8String);
-    tidySetOutCharEncoding(_tidyDocument, encoding.UTF8String);
+    tidySetInCharEncoding(_tidyDocument, "utf-8");
+    tidySetOutCharEncoding(_tidyDocument, "utf-8");
 
+    [self setOptions:options];
+
+    return self;
+}
+
+-(void) setOptions:(NSDictionary*)options
+{
     // Set extra option
-    [tidyOptions enumerateKeysAndObjectsUsingBlock:^(NSString* key, NSString* value, BOOL *stop) {
+    [options enumerateKeysAndObjectsUsingBlock:^(NSString* key, NSString* value, BOOL *stop) {
         Bool result = tidyOptParseValue(_tidyDocument, key.UTF8String, value.UTF8String);
         NSAssert(result, @"tidyOptParseValue(%@, %@) should return YES, now return NO", key, value);
     }];
-
-    return self;
 }
 
 -(NSString*) cleanString:(NSString*)string error:(NSError**)outError
