@@ -2,6 +2,7 @@
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/IGTidy/badge.png)](http://cocoadocs.org/docsets/IGTidy)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/IGTidy/badge.png)](http://cocoadocs.org/docsets/IGTidy)
+[![Build](https://api.travis-ci.org/siuying/IGTidy.svg)](https://travis-ci.org/siuying/IGTidy)
 
 ## Usage
 
