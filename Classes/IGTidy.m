@@ -82,11 +82,14 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
     // Set extra option
     [options enumerateKeysAndObjectsUsingBlock:^(NSString* key, NSString* value, BOOL *stop) {
         Bool result = tidyOptParseValue(_tidyDocument, key.UTF8String, value.UTF8String);
-        NSAssert(result, @"tidyOptParseValue(%@, %@) should return YES, now return NO", key, value);
+        if (!result) {
+            [NSException raise:NSInvalidArgumentException
+                        format:@"tidyOptParseValue(%@, %@) should return YES, now return NO", key, value];
+        }
     }];
 }
 
--(NSString*) cleanString:(NSString*)string error:(NSError**)outError
+-(NSString*) cleanHTML:(NSString*)html error:(NSError**)outError
 {
     // Create an error buffer
     TidyBuffer errorBuffer;
@@ -98,7 +101,7 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
     tidySetOutCharEncoding(_tidyDocument, "utf-8");
 
     // parse the data
-    int returnCode = tidyParseString(_tidyDocument, [string UTF8String]);
+    int returnCode = tidyParseString(_tidyDocument, [html UTF8String]);
     if (returnCode < 0) {
         if (outError) {
             NSDictionary *theUserInfo = @{NSLocalizedDescriptionKey: [NSString stringWithUTF8String:(char *)errorBuffer.bp]};

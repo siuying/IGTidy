@@ -18,15 +18,38 @@ typedef enum {
 
 @interface IGTidy : NSObject
 
+/**
+ * Initialize Tidy with the input and output format.
+ * @param inputFormat Input file format
+ * @param outputFormat Output file format
+ */
 -(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
                        outputFormat:(IGTidyFormat)outputFormat;
 
+/**
+ * Initialize Tidy with the input and output format.
+ * @param inputFormat Input file format
+ * @param outputFormat Output file format
+ * @param options Options to configure Tidy
+ * @see setOptions:
+ */
 -(instancetype) initWithInputFormat:(IGTidyFormat)inputFormat
                        outputFormat:(IGTidyFormat)outputFormat
                             options:(NSDictionary*)options;
 
+/**
+ * Configure options with Tidy
+ * @param options Options to configure Tidy
+ * @throw NSInvalidArgumentException if there is error setting options
+ */
 -(void) setOptions:(NSDictionary*)options;
 
--(NSString*) cleanString:(NSString*)string error:(NSError**)outError;
+/**
+ * Clean the input HTML and optionally getting an NSError in case of failed cleaning.
+ * @param html HTML to be cleaned
+ * @param outError output error
+ * @return cleaned HTML string
+ */
+-(NSString*) cleanHTML:(NSString*)html error:(NSError**)outError;
 
 @end
