@@ -1,4 +1,4 @@
-pod "IGTidy", :path => "../IGTidy.podspec"
+pod "IGTidy", :path => ".."
 
 target "IGTidyTests" do
   pod "Kiwi/XCTest"

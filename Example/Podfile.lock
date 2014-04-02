@@ -1,5 +1,5 @@
 PODS:
-  - IGTidy (0.1.0)
+  - IGTidy (0.1.1)
   - Kiwi/ARC (2.2.4)
   - Kiwi/NonARC (2.2.4)
   - Kiwi/XCTest (2.2.4):
@@ -7,15 +7,15 @@ PODS:
     - Kiwi/NonARC
 
 DEPENDENCIES:
-  - IGTidy (from `../IGTidy.podspec`)
+  - IGTidy (from `..`)
   - Kiwi/XCTest
 
 EXTERNAL SOURCES:
   IGTidy:
-    :path: ../IGTidy.podspec
+    :path: ..
 
 SPEC CHECKSUMS:
-  IGTidy: 41b9e063ae181d819a4513bb558209e191144af4
+  IGTidy: a11f0aece41e749b815d2f9422ba7b426ceb7ee0
   Kiwi: d60d7498b640a16f58b01925fc3c8d7c4d809f66
 
 COCOAPODS: 0.31.1
