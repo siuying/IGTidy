@@ -1,6 +1,6 @@
-desc "Runs the specs [EMPTY]"
+desc "Runs the specs"
 task :spec do
-  # Provide your own implementation
+  sh 'xcodebuild -workspace ./Example/IGTidy.xcworkspace -scheme IGTidy -sdk iphonesimulator test'
 end
 
 task :version do
