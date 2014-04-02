@@ -71,10 +71,6 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
             break;
         };
     }
-    
-    // Set encoding - same for input and output
-    tidySetInCharEncoding(_tidyDocument, "utf-8");
-    tidySetOutCharEncoding(_tidyDocument, "utf-8");
 
     [self setOptions:options];
 
@@ -96,6 +92,10 @@ NSString* const IGTidyErrorDomain = @"IGTidyErrorDomain";
     TidyBuffer errorBuffer;
     tidyBufInit(&errorBuffer);
     tidySetErrorBuffer(_tidyDocument, &errorBuffer);
+    
+    // Set encoding - same for input and output
+    tidySetInCharEncoding(_tidyDocument, "utf-8");
+    tidySetOutCharEncoding(_tidyDocument, "utf-8");
 
     // parse the data
     int returnCode = tidyParseString(_tidyDocument, [string UTF8String]);

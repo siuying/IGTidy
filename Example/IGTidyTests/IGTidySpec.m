@@ -74,6 +74,15 @@ describe(@"IGTidy", ^{
             [[html should] containString:@"<img src=\"abc\">"];
         });
     });
+    
+    describe(@"Test with real html", ^{
+        it(@"should clean html5 from Mashable", ^{
+            NSString* filename = [[NSBundle bundleForClass:[self class]] pathForResource:@"mashable" ofType:@"html"];
+            NSString* html = [[NSString alloc] initWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:nil];
+            html = [tidy cleanString:html error:nil];
+            [[html should] containString:@"<div class=\"article-info\"><a class=\"byline\" href=\"/people/mgoldin/\"><img alt=\"Photo\" class=\"author_image\" src=\"http://rack.3.mshcdn.com/media/ZgkyMDE0LzAxLzE0LzVhL3Bob3RvLjZlMjQyLmpwZwpwCXRodW1iCTkweDkwIwplCWpwZw/414ad639/597/photo.jpg\">\n<div class=\"author_and_date\"><span class=\"author_name\">By Melissa Goldin</span><time datetime=\"Mon, 24 Mar 2014 04:00:09 +0000\">2014-03-24 04:00:09 UTC</time></div>\n</a></div>"];
+        });
+    });
 });
 
 SPEC_END

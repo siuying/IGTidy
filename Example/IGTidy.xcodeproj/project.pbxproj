@@ -22,6 +22,7 @@
 		543F1EB818EAD6C800B4D0DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543F1E9718EAD6C800B4D0DB /* UIKit.framework */; };
 		543F1EC018EAD6C800B4D0DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543F1EBE18EAD6C800B4D0DB /* InfoPlist.strings */; };
 		543F1F2418EAE86B00B4D0DB /* IGTidySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 543F1F2318EAE86B00B4D0DB /* IGTidySpec.m */; };
+		5466EEE618EBB722005017BC /* mashable.html in Resources */ = {isa = PBXBuildFile; fileRef = 5466EEE518EBB722005017BC /* mashable.html */; };
 		B4B3FE4AF4624B6087458ED1 /* libPods-IGTidyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86A4DA734B249008A4AA136 /* libPods-IGTidyTests.a */; };
 		E90C6A8AD3074F07B540082C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD6F3198C274834B8221E68 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		543F1F2018EAD71100B4D0DB /* IGTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGTidy.h; path = ../../Classes/IGTidy.h; sourceTree = "<group>"; };
 		543F1F2118EAD71100B4D0DB /* IGTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGTidy.m; path = ../../Classes/IGTidy.m; sourceTree = "<group>"; };
 		543F1F2318EAE86B00B4D0DB /* IGTidySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGTidySpec.m; sourceTree = "<group>"; };
+		5466EEE518EBB722005017BC /* mashable.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mashable.html; sourceTree = "<group>"; };
 		8AB97A3DB0FB493E8D24020B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B86A4DA734B249008A4AA136 /* libPods-IGTidyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGTidyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6F3198C274834B8221E68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 		543F1EBB18EAD6C800B4D0DB /* IGTidyTests */ = {
 			isa = PBXGroup;
 			children = (
+				5466EEE218EBB585005017BC /* Fixtures */,
 				543F1EBC18EAD6C800B4D0DB /* Supporting Files */,
 				543F1F2318EAE86B00B4D0DB /* IGTidySpec.m */,
 			);
@@ -177,6 +180,14 @@
 				543F1F2118EAD71100B4D0DB /* IGTidy.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		5466EEE218EBB585005017BC /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				5466EEE518EBB722005017BC /* mashable.html */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543F1EC018EAD6C800B4D0DB /* InfoPlist.strings in Resources */,
+				5466EEE618EBB722005017BC /* mashable.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
