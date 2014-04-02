@@ -17,6 +17,19 @@ it simply add the following line to your Podfile:
 
     pod "IGTidy"
 
+## Development
+
+1. Fetch the first:
+```
+git submodule update --init
+```
+2. Install cocoapods
+```
+cd Example
+pod install
+```
+3. Open the sample workspace `Example/IGTidy.xcworkspace`
+
 ## Author
 
 Francis Chong, francis@ignition.hk
