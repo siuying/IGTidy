@@ -1,11 +1,6 @@
 language: objective-c
 before_script:
   - export LANG=en_US.UTF-8
-  - gem i cocoapods --no-ri --no-rdoc
-  - brew update
-  - brew uninstall xctool
-  - brew install xctool
+  - bundle install
   - cd Example; pod install ; cd ..
-xcode_workspace: Example/IGTidy.xcworkspace
-xcode_scheme: IGTidy
-xcode_sdk: iphonesimulator
+script: bundle exec rake spec
