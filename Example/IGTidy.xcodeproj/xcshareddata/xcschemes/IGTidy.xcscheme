@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -35,6 +35,26 @@
                BlueprintIdentifier = "543F1EB318EAD6C800B4D0DB"
                BuildableName = "IGTidyTests.xctest"
                BlueprintName = "IGTidyTests"
+               ReferencedContainer = "container:IGTidy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54EF577718EBF71400124F92"
+               BuildableName = "libtidyTests.xctest"
+               BlueprintName = "libtidyTests"
+               ReferencedContainer = "container:IGTidy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54EF579D18EBF72900124F92"
+               BuildableName = "tidy-html5Tests.xctest"
+               BlueprintName = "tidy-html5Tests"
                ReferencedContainer = "container:IGTidy.xcodeproj">
             </BuildableReference>
          </TestableReference>

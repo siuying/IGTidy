@@ -1,3 +1,22 @@
+desc "Generate podspec for the project" 
+task :generate do
+  # build tidy-html5 library
+  sh 'xcodebuild -workspace ./Example/IGTidy.xcworkspace -scheme tidy-html5-universal -sdk iphonesimulator build'
+
+  # generate a file with linkers
+  sh 'bin/generate_config'
+
+  linker_flags = File.open('tidy-html5/tidy-html5.config').read
+
+  File.open('IGTidy.podspec.template', 'r') do |template|
+    File.open('IGTidy.podspec', 'w') do |output|
+      output.write(template.read.gsub("%%OTHER_LDFLAGS%%", linker_flags))
+    end
+  end
+end
+
+task :default => :generate
+
 desc "Runs the specs"
 task :spec do
   sh 'xcodebuild -workspace ./Example/IGTidy.xcworkspace -scheme IGTidy -sdk iphonesimulator test'

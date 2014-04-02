@@ -1,0 +1,5 @@
+CONFIG_FILE_NAME=tidy-html5/tidy-html5.config
+
+nm tidy-html5/libtidy-html5.a | sort | uniq | grep " T " | cut -d' ' -f3 | grep -v "\$_NS" | grep -v "\$_UI" | sed -e 's/_\(.*\)/-D\1=ig_\1/g' | tr '\n' ' ' > $CONFIG_FILE_NAME
+nm tidy-html5/libtidy-html5.a | sort | uniq | grep " D " | cut -d' ' -f3 | grep -v "\$_NS" | grep -v "\$_UI" | sed -e 's/_\(.*\)/-D\1=ig_\1/g' | tr '\n' ' ' >> $CONFIG_FILE_NAME
+nm tidy-html5/libtidy-html5.a | sort | uniq | grep " S " | cut -d' ' -f3 | grep -v "\$_NS" | grep -v ".eh" | grep -v "\$_UI" | sed -e 's/_\(.*\)/-D\1=ig_\1/g' | tr '\n' ' ' >> $CONFIG_FILE_NAME

@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		54EF581118EC00F500124F92 /* tidy-html5-universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 54EF581218EC00F500124F92 /* Build configuration list for PBXAggregateTarget "tidy-html5-universal" */;
+			buildPhases = (
+				54EF581518EC00F800124F92 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "tidy-html5-universal";
+			productName = "tidy-html5-universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		543F1E9418EAD6C800B4D0DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543F1E9318EAD6C800B4D0DB /* Foundation.framework */; };
 		543F1E9618EAD6C800B4D0DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543F1E9518EAD6C800B4D0DB /* CoreGraphics.framework */; };
@@ -23,6 +37,34 @@
 		543F1EC018EAD6C800B4D0DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543F1EBE18EAD6C800B4D0DB /* InfoPlist.strings */; };
 		543F1F2418EAE86B00B4D0DB /* IGTidySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 543F1F2318EAE86B00B4D0DB /* IGTidySpec.m */; };
 		5466EEE618EBB722005017BC /* mashable.html in Resources */ = {isa = PBXBuildFile; fileRef = 5466EEE518EBB722005017BC /* mashable.html */; };
+		54EF579218EBF72900124F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543F1E9318EAD6C800B4D0DB /* Foundation.framework */; };
+		54EF57EB18EBF76600124F92 /* access.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57B918EBF76600124F92 /* access.c */; };
+		54EF57EC18EBF76600124F92 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57BB18EBF76600124F92 /* alloc.c */; };
+		54EF57ED18EBF76600124F92 /* attrask.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57BC18EBF76600124F92 /* attrask.c */; };
+		54EF57EE18EBF76600124F92 /* attrdict.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57BD18EBF76600124F92 /* attrdict.c */; };
+		54EF57EF18EBF76600124F92 /* attrget.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57BF18EBF76600124F92 /* attrget.c */; };
+		54EF57F018EBF76600124F92 /* attrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C018EBF76600124F92 /* attrs.c */; };
+		54EF57F118EBF76600124F92 /* buffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C218EBF76600124F92 /* buffio.c */; };
+		54EF57F218EBF76600124F92 /* charsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C318EBF76600124F92 /* charsets.c */; };
+		54EF57F318EBF76600124F92 /* clean.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C518EBF76600124F92 /* clean.c */; };
+		54EF57F418EBF76600124F92 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C718EBF76600124F92 /* config.c */; };
+		54EF57F518EBF76600124F92 /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57C918EBF76600124F92 /* entities.c */; };
+		54EF57F618EBF76600124F92 /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57CB18EBF76600124F92 /* fileio.c */; };
+		54EF57F718EBF76600124F92 /* gdoc.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57CE18EBF76600124F92 /* gdoc.c */; };
+		54EF57F818EBF76600124F92 /* iconvtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D018EBF76600124F92 /* iconvtc.c */; };
+		54EF57F918EBF76600124F92 /* istack.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D218EBF76600124F92 /* istack.c */; };
+		54EF57FA18EBF76600124F92 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D318EBF76600124F92 /* lexer.c */; };
+		54EF57FB18EBF76600124F92 /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D518EBF76600124F92 /* localize.c */; };
+		54EF57FC18EBF76600124F92 /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D618EBF76600124F92 /* mappedio.c */; };
+		54EF57FD18EBF76600124F92 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57D918EBF76600124F92 /* parser.c */; };
+		54EF57FE18EBF76600124F92 /* pprint.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57DB18EBF76600124F92 /* pprint.c */; };
+		54EF57FF18EBF76600124F92 /* streamio.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57DD18EBF76600124F92 /* streamio.c */; };
+		54EF580018EBF76600124F92 /* tagask.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57DF18EBF76600124F92 /* tagask.c */; };
+		54EF580118EBF76600124F92 /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57E018EBF76600124F92 /* tags.c */; };
+		54EF580218EBF76600124F92 /* tidylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57E318EBF76600124F92 /* tidylib.c */; };
+		54EF580318EBF76600124F92 /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57E418EBF76600124F92 /* tmbstr.c */; };
+		54EF580418EBF76600124F92 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57E618EBF76600124F92 /* utf8.c */; };
+		54EF580518EBF76600124F92 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = 54EF57E918EBF76600124F92 /* win32tc.c */; };
 		B4B3FE4AF4624B6087458ED1 /* libPods-IGTidyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86A4DA734B249008A4AA136 /* libPods-IGTidyTests.a */; };
 		E90C6A8AD3074F07B540082C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD6F3198C274834B8221E68 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -36,6 +78,18 @@
 			remoteInfo = IGTidy;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54EF578F18EBF72900124F92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		543F1E9018EAD6C800B4D0DB /* IGTidy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGTidy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +115,62 @@
 		543F1F2118EAD71100B4D0DB /* IGTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGTidy.m; path = ../../Classes/IGTidy.m; sourceTree = "<group>"; };
 		543F1F2318EAE86B00B4D0DB /* IGTidySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGTidySpec.m; sourceTree = "<group>"; };
 		5466EEE518EBB722005017BC /* mashable.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mashable.html; sourceTree = "<group>"; };
+		54EF579118EBF72900124F92 /* libtidy-html5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtidy-html5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54EF57B418EBF76600124F92 /* buffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffio.h; sourceTree = "<group>"; };
+		54EF57B518EBF76600124F92 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		54EF57B618EBF76600124F92 /* tidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidy.h; sourceTree = "<group>"; };
+		54EF57B718EBF76600124F92 /* tidyenum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidyenum.h; sourceTree = "<group>"; };
+		54EF57B918EBF76600124F92 /* access.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = access.c; sourceTree = "<group>"; };
+		54EF57BA18EBF76600124F92 /* access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = access.h; sourceTree = "<group>"; };
+		54EF57BB18EBF76600124F92 /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		54EF57BC18EBF76600124F92 /* attrask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrask.c; sourceTree = "<group>"; };
+		54EF57BD18EBF76600124F92 /* attrdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrdict.c; sourceTree = "<group>"; };
+		54EF57BE18EBF76600124F92 /* attrdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrdict.h; sourceTree = "<group>"; };
+		54EF57BF18EBF76600124F92 /* attrget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrget.c; sourceTree = "<group>"; };
+		54EF57C018EBF76600124F92 /* attrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrs.c; sourceTree = "<group>"; };
+		54EF57C118EBF76600124F92 /* attrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrs.h; sourceTree = "<group>"; };
+		54EF57C218EBF76600124F92 /* buffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffio.c; sourceTree = "<group>"; };
+		54EF57C318EBF76600124F92 /* charsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = charsets.c; sourceTree = "<group>"; };
+		54EF57C418EBF76600124F92 /* charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = charsets.h; sourceTree = "<group>"; };
+		54EF57C518EBF76600124F92 /* clean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clean.c; sourceTree = "<group>"; };
+		54EF57C618EBF76600124F92 /* clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clean.h; sourceTree = "<group>"; };
+		54EF57C718EBF76600124F92 /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		54EF57C818EBF76600124F92 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		54EF57C918EBF76600124F92 /* entities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entities.c; sourceTree = "<group>"; };
+		54EF57CA18EBF76600124F92 /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entities.h; sourceTree = "<group>"; };
+		54EF57CB18EBF76600124F92 /* fileio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileio.c; sourceTree = "<group>"; };
+		54EF57CC18EBF76600124F92 /* fileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileio.h; sourceTree = "<group>"; };
+		54EF57CD18EBF76600124F92 /* forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forward.h; sourceTree = "<group>"; };
+		54EF57CE18EBF76600124F92 /* gdoc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gdoc.c; sourceTree = "<group>"; };
+		54EF57CF18EBF76600124F92 /* gdoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gdoc.h; sourceTree = "<group>"; };
+		54EF57D018EBF76600124F92 /* iconvtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iconvtc.c; sourceTree = "<group>"; };
+		54EF57D118EBF76600124F92 /* iconvtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconvtc.h; sourceTree = "<group>"; };
+		54EF57D218EBF76600124F92 /* istack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = istack.c; sourceTree = "<group>"; };
+		54EF57D318EBF76600124F92 /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lexer.c; sourceTree = "<group>"; };
+		54EF57D418EBF76600124F92 /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		54EF57D518EBF76600124F92 /* localize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localize.c; sourceTree = "<group>"; };
+		54EF57D618EBF76600124F92 /* mappedio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mappedio.c; sourceTree = "<group>"; };
+		54EF57D718EBF76600124F92 /* mappedio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mappedio.h; sourceTree = "<group>"; };
+		54EF57D818EBF76600124F92 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		54EF57D918EBF76600124F92 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		54EF57DA18EBF76600124F92 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		54EF57DB18EBF76600124F92 /* pprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pprint.c; sourceTree = "<group>"; };
+		54EF57DC18EBF76600124F92 /* pprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pprint.h; sourceTree = "<group>"; };
+		54EF57DD18EBF76600124F92 /* streamio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streamio.c; sourceTree = "<group>"; };
+		54EF57DE18EBF76600124F92 /* streamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamio.h; sourceTree = "<group>"; };
+		54EF57DF18EBF76600124F92 /* tagask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagask.c; sourceTree = "<group>"; };
+		54EF57E018EBF76600124F92 /* tags.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tags.c; sourceTree = "<group>"; };
+		54EF57E118EBF76600124F92 /* tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tags.h; sourceTree = "<group>"; };
+		54EF57E218EBF76600124F92 /* tidy-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tidy-int.h"; sourceTree = "<group>"; };
+		54EF57E318EBF76600124F92 /* tidylib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tidylib.c; sourceTree = "<group>"; };
+		54EF57E418EBF76600124F92 /* tmbstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tmbstr.c; sourceTree = "<group>"; };
+		54EF57E518EBF76600124F92 /* tmbstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmbstr.h; sourceTree = "<group>"; };
+		54EF57E618EBF76600124F92 /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		54EF57E718EBF76600124F92 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		54EF57E818EBF76600124F92 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		54EF57E918EBF76600124F92 /* win32tc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32tc.c; sourceTree = "<group>"; };
+		54EF57EA18EBF76600124F92 /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32tc.h; sourceTree = "<group>"; };
+		54EF581018EBFF2A00124F92 /* tidy-html5.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "tidy-html5.xcconfig"; path = "../../tidy-html5/tidy-html5.xcconfig"; sourceTree = "<group>"; };
 		8AB97A3DB0FB493E8D24020B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B86A4DA734B249008A4AA136 /* libPods-IGTidyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGTidyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6F3198C274834B8221E68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +200,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54EF578E18EBF72900124F92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EF579218EBF72900124F92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +216,7 @@
 			children = (
 				543F1E9918EAD6C800B4D0DB /* IGTidy */,
 				543F1EBB18EAD6C800B4D0DB /* IGTidyTests */,
+				54EF579318EBF72900124F92 /* tidy-html5 */,
 				543F1E9218EAD6C800B4D0DB /* Frameworks */,
 				543F1E9118EAD6C800B4D0DB /* Products */,
 				8AB97A3DB0FB493E8D24020B /* Pods.xcconfig */,
@@ -110,6 +229,7 @@
 			children = (
 				543F1E9018EAD6C800B4D0DB /* IGTidy.app */,
 				543F1EB418EAD6C800B4D0DB /* IGTidyTests.xctest */,
+				54EF579118EBF72900124F92 /* libtidy-html5.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +310,94 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		54EF579318EBF72900124F92 /* tidy-html5 */ = {
+			isa = PBXGroup;
+			children = (
+				54EF57B318EBF76600124F92 /* include */,
+				54EF57B818EBF76600124F92 /* src */,
+				54EF579418EBF72900124F92 /* Supporting Files */,
+				54EF581018EBFF2A00124F92 /* tidy-html5.xcconfig */,
+			);
+			path = "tidy-html5";
+			sourceTree = "<group>";
+		};
+		54EF579418EBF72900124F92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54EF57B318EBF76600124F92 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				54EF57B418EBF76600124F92 /* buffio.h */,
+				54EF57B518EBF76600124F92 /* platform.h */,
+				54EF57B618EBF76600124F92 /* tidy.h */,
+				54EF57B718EBF76600124F92 /* tidyenum.h */,
+			);
+			name = include;
+			path = "../../vendor/tidy-html5/include";
+			sourceTree = "<group>";
+		};
+		54EF57B818EBF76600124F92 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				54EF57B918EBF76600124F92 /* access.c */,
+				54EF57BA18EBF76600124F92 /* access.h */,
+				54EF57BB18EBF76600124F92 /* alloc.c */,
+				54EF57BC18EBF76600124F92 /* attrask.c */,
+				54EF57BD18EBF76600124F92 /* attrdict.c */,
+				54EF57BE18EBF76600124F92 /* attrdict.h */,
+				54EF57BF18EBF76600124F92 /* attrget.c */,
+				54EF57C018EBF76600124F92 /* attrs.c */,
+				54EF57C118EBF76600124F92 /* attrs.h */,
+				54EF57C218EBF76600124F92 /* buffio.c */,
+				54EF57C318EBF76600124F92 /* charsets.c */,
+				54EF57C418EBF76600124F92 /* charsets.h */,
+				54EF57C518EBF76600124F92 /* clean.c */,
+				54EF57C618EBF76600124F92 /* clean.h */,
+				54EF57C718EBF76600124F92 /* config.c */,
+				54EF57C818EBF76600124F92 /* config.h */,
+				54EF57C918EBF76600124F92 /* entities.c */,
+				54EF57CA18EBF76600124F92 /* entities.h */,
+				54EF57CB18EBF76600124F92 /* fileio.c */,
+				54EF57CC18EBF76600124F92 /* fileio.h */,
+				54EF57CD18EBF76600124F92 /* forward.h */,
+				54EF57CE18EBF76600124F92 /* gdoc.c */,
+				54EF57CF18EBF76600124F92 /* gdoc.h */,
+				54EF57D018EBF76600124F92 /* iconvtc.c */,
+				54EF57D118EBF76600124F92 /* iconvtc.h */,
+				54EF57D218EBF76600124F92 /* istack.c */,
+				54EF57D318EBF76600124F92 /* lexer.c */,
+				54EF57D418EBF76600124F92 /* lexer.h */,
+				54EF57D518EBF76600124F92 /* localize.c */,
+				54EF57D618EBF76600124F92 /* mappedio.c */,
+				54EF57D718EBF76600124F92 /* mappedio.h */,
+				54EF57D818EBF76600124F92 /* message.h */,
+				54EF57D918EBF76600124F92 /* parser.c */,
+				54EF57DA18EBF76600124F92 /* parser.h */,
+				54EF57DB18EBF76600124F92 /* pprint.c */,
+				54EF57DC18EBF76600124F92 /* pprint.h */,
+				54EF57DD18EBF76600124F92 /* streamio.c */,
+				54EF57DE18EBF76600124F92 /* streamio.h */,
+				54EF57DF18EBF76600124F92 /* tagask.c */,
+				54EF57E018EBF76600124F92 /* tags.c */,
+				54EF57E118EBF76600124F92 /* tags.h */,
+				54EF57E218EBF76600124F92 /* tidy-int.h */,
+				54EF57E318EBF76600124F92 /* tidylib.c */,
+				54EF57E418EBF76600124F92 /* tmbstr.c */,
+				54EF57E518EBF76600124F92 /* tmbstr.h */,
+				54EF57E618EBF76600124F92 /* utf8.c */,
+				54EF57E718EBF76600124F92 /* utf8.h */,
+				54EF57E818EBF76600124F92 /* version.h */,
+				54EF57E918EBF76600124F92 /* win32tc.c */,
+				54EF57EA18EBF76600124F92 /* win32tc.h */,
+			);
+			name = src;
+			path = "../../vendor/tidy-html5/src";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +440,23 @@
 			productReference = 543F1EB418EAD6C800B4D0DB /* IGTidyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		54EF579018EBF72900124F92 /* tidy-html5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54EF57AD18EBF72900124F92 /* Build configuration list for PBXNativeTarget "tidy-html5" */;
+			buildPhases = (
+				54EF578D18EBF72900124F92 /* Sources */,
+				54EF578E18EBF72900124F92 /* Frameworks */,
+				54EF578F18EBF72900124F92 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tidy-html5";
+			productName = "tidy-html5";
+			productReference = 54EF579118EBF72900124F92 /* libtidy-html5.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,7 +464,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IG;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ignition Soft";
 				TargetAttributes = {
 					543F1EB318EAD6C800B4D0DB = {
@@ -262,6 +487,8 @@
 			targets = (
 				543F1E8F18EAD6C800B4D0DB /* IGTidy */,
 				543F1EB318EAD6C800B4D0DB /* IGTidyTests */,
+				54EF579018EBF72900124F92 /* tidy-html5 */,
+				54EF581118EC00F500124F92 /* tidy-html5-universal */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +562,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		54EF581518EC00F800124F92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=\"../tidy-html5\"\nLIBRARY_NAME=\"tidy-html5\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target tidy-html5 ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target tidy-html5 -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${LIBRARY_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${LIBRARY_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${LIBRARY_NAME}.a\"\n";
+		};
 		A98928A20849412EBC44158F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +608,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				543F1F2418EAE86B00B4D0DB /* IGTidySpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54EF578D18EBF72900124F92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EF580418EBF76600124F92 /* utf8.c in Sources */,
+				54EF57F918EBF76600124F92 /* istack.c in Sources */,
+				54EF57F718EBF76600124F92 /* gdoc.c in Sources */,
+				54EF57F218EBF76600124F92 /* charsets.c in Sources */,
+				54EF580518EBF76600124F92 /* win32tc.c in Sources */,
+				54EF57F018EBF76600124F92 /* attrs.c in Sources */,
+				54EF57FC18EBF76600124F92 /* mappedio.c in Sources */,
+				54EF57EB18EBF76600124F92 /* access.c in Sources */,
+				54EF57FD18EBF76600124F92 /* parser.c in Sources */,
+				54EF57ED18EBF76600124F92 /* attrask.c in Sources */,
+				54EF580318EBF76600124F92 /* tmbstr.c in Sources */,
+				54EF580018EBF76600124F92 /* tagask.c in Sources */,
+				54EF57FF18EBF76600124F92 /* streamio.c in Sources */,
+				54EF57EF18EBF76600124F92 /* attrget.c in Sources */,
+				54EF580218EBF76600124F92 /* tidylib.c in Sources */,
+				54EF57F618EBF76600124F92 /* fileio.c in Sources */,
+				54EF57FA18EBF76600124F92 /* lexer.c in Sources */,
+				54EF57F118EBF76600124F92 /* buffio.c in Sources */,
+				54EF57F818EBF76600124F92 /* iconvtc.c in Sources */,
+				54EF57F318EBF76600124F92 /* clean.c in Sources */,
+				54EF57F518EBF76600124F92 /* entities.c in Sources */,
+				54EF57EE18EBF76600124F92 /* attrdict.c in Sources */,
+				54EF57FB18EBF76600124F92 /* localize.c in Sources */,
+				54EF57EC18EBF76600124F92 /* alloc.c in Sources */,
+				54EF57FE18EBF76600124F92 /* pprint.c in Sources */,
+				54EF580118EBF76600124F92 /* tags.c in Sources */,
+				54EF57F418EBF76600124F92 /* config.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +695,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -461,7 +734,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -525,7 +797,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF70AE6B90F341208F1A63A5 /* Pods-IGTidyTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGTidy.app/IGTidy";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -549,7 +820,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF70AE6B90F341208F1A63A5 /* Pods-IGTidyTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGTidy.app/IGTidy";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -562,6 +832,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		54EF57AE18EBF72900124F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tidy_html5.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"../vendor/tidy-html5/include",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54EF57AF18EBF72900124F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tidy_html5.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"../vendor/tidy-html5/include",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		54EF581318EC00F500124F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54EF581418EC00F500124F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -594,6 +918,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		54EF57AD18EBF72900124F92 /* Build configuration list for PBXNativeTarget "tidy-html5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54EF57AE18EBF72900124F92 /* Debug */,
+				54EF57AF18EBF72900124F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54EF581218EC00F500124F92 /* Build configuration list for PBXAggregateTarget "tidy-html5-universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54EF581318EC00F500124F92 /* Debug */,
+				54EF581418EC00F500124F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
